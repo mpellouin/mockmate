@@ -21,20 +21,17 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Go to server directory
-        run: cd server
-
       - name: Install pnpm
         run: npm install -g pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: cd server && pnpm install
 
       - name: Lint
-        run: pnpm lint
+        run: cd server && pnpm lint
 
       - name: Run tests
-        run: pnpm test
+        run: cd server && pnpm test
 
       - name: Build
-        run: pnpm build
+        run: cd server && pnpm build
