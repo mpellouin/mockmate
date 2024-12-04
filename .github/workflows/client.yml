@@ -20,6 +20,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22'
+      
+      - name: Go to client directory
+        run: cd client
 
       - name: Install pnpm
         run: npm install -g pnpm
