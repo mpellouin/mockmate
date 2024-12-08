@@ -1,4 +1,5 @@
 import GridPattern from "@/components/ui/grid-pattern";
+import ShinyButton from "@/components/ui/shiny-button";
 import { TextGeneratePanel } from "@/components/ui/text-generate-effect";
 import { cn } from "@/lib/utils";
 
@@ -14,6 +15,7 @@ export default function Home() {
         <h2 className="text-gray-500 text-2xl mt-6">
           Discover the best way to get training through AI mock interviews.
         </h2>
+        <ShinyButton className="mt-8 bg-white rounded-3xl">Get started</ShinyButton>
         </div>
         <GridPattern
         width={20}
